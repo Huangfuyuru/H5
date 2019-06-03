@@ -3,7 +3,7 @@
     font-family: '华文行楷';
     /* background: linear-gradient(to bottom left,#858DA6,#D6D9C5,#A6998A); */
     color:white;
-    background: url(../img/oo.png);
+    background: url(../img/oo.webp);
     border-bottom:2px solid wheat;
    
 }
@@ -61,7 +61,7 @@
 }
 /*紫砂壶器型解读*/
 #bbs2{
-    background:url(../img2/img1.png);
+    background:url(../img2/img1~1.webp);
     height: 650px;
 }
 /*器型解读*/
@@ -73,7 +73,7 @@
 #bss4{
     height: 650px;
     padding:80px 0;
-    background:url(../img/图片3.jpg) no-repeat;
+    background:url(../img/图片3.webp) no-repeat;
 }
 #bss4 p{
     font-weight: bold;
