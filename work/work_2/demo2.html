@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas{
+            border:1px solid #a0bad8;
+            background-image: url(img/zhong.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="341" height="121"></canvas>    
+</body>
+    <script>
+        window.onload=function(){
+            var canvas=document.getElementById("canvas");
+            var context=canvas.getContext('2d');
+
+            context.beginPath();
+            context.fillStyle="#a0bad8";
+            context.fillRect(0,0,341,121);
+            context.closePath();
+
+            context.globalCompositeOperation="destination-out";
+            //destination-out
+
+            canvas.onmousedown=function(ev){
+                var e=ev||window.event;
+                var x=e.clientX;
+                var y=e.clientY;
+                context.beginPath();
+                context.fillStyle="pink";
+                context.arc(x,y,20,0,2*Math.PI);
+                context.fill();
+                test();
+                canvas.onmousemove=function(e){
+                    var ee=e||window.event;
+                    var x=ee.clientX;
+                    var y=ee.clientY;
+                    context.beginPath();
+                    context.fillStyle="pink";
+                    context.arc(x,y,20,0,2*Math.PI);
+                    context.fill();
+                    test();
+                }
+            }
+            canvas.onmouseup=function(){
+                canvas.onmousemove=null;
+            }
+            function test(){
+                var imgData=context.getImageData(0,0,341,121);
+                var imgDataList=imgData.data;
+                var len=imgDataList.length;
+                var count=0;
+                for(var i=0;i<len;i+=4){
+                    var a=imgDataList[i+3];
+                    if(a<10){
+                        count++;
+                    }
+                }
+                var percent=count/(len/4);
+                console.log(percent);
+                if(percent>=0.85){
+                    context.beginPath();
+                    context.clearRect(0,0,341,121);
+                    context.closePath();
+                }
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas{
+            border:1px solid #a0bad8;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="150"></canvas>    
+</body>
+    <script>
+        window.onload=function(){
+            var canvas=document.getElementById("canvas");
+            var context=canvas.getContext('2d');
+            
+            context.beginPath();
+            context.fillStyle="pink";
+            context.fillRect(0,0,300,150);
+            context.closePath();
+
+            context.globalCompositeOperation="source-over";
+            //destination-out
+            context.beginPath();
+            context.font = "bolder 50px 幼圆";
+            context.fillStyle = "yellow";
+            context.fillText("恭喜中奖", 40, 80);
+            context.closePath();
+
+            context.beginPath();
+            context.fillStyle="#a0bad8";
+            context.fillRect(0,0,300,150);
+            context.closePath();
+
+            canvas.onclick=function(ev){
+                var e=ev||window.event;
+                var x=e.clientX;
+                var y=e.clientY;
+                context.beginPath();
+                context.fillStyle="pink";
+                context.arc(x,y,20,0,2*Math.PI);
+                context.fill();
+                console.log(x,y);
+
+            }
+        }
+    </script>
+</html>

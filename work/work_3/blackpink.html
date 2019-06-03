@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width:500px;
+            height: 430px;
+            overflow: hidden;
+            position: relative;
+            top:10px;
+            left:30%;
+            border:2px solid  hsla(180, 15%, 44%, 0.337);
+            box-shadow: 4px 4px hsla(180, 15%, 44%, 0.337);
+        }
+        #canvas{
+            position:absolute;
+            top:0;
+            left:0;
+
+        }
+        #xun{
+            width:500px;
+            height: 313px;
+            overflow: hidden;
+        }
+        .container:hover #img{
+            transform:translate(0,50px) scale(1.5,1.5);
+            
+        }
+        .container:hover #box{
+            transform:scale(1,1);
+            transition: transform 0s linear;
+        }
+        .container:hover #fun{
+            transform:translateY(-90px);
+            transition: transform 1s ease-in-out;
+        }
+        .container:hover #pic{
+            transform:translateY(-90px);
+            transition: transform 1s ease-in-out;
+        }
+        .container:hover #p2{
+            transform:scale(1,1);
+            transition:transform 0s linear 1s;
+        }
+        #box{
+            width:500px;
+            height: 313px;
+            position: absolute;
+            top:0;
+            left:0;
+            background:#ad8bfd75;
+            transform:scale(0,0);
+        }
+        #fun{
+            width:500px;
+            background: white;
+            padding:10px 20px;
+            box-sizing: border-box;
+        }
+        #h1{
+            color:white;
+            text-shadow: 2px 2px 5px black;
+            
+
+        }
+        #h2{
+            font-size:30px;
+            color:pink;
+            text-shadow: 1px 1px black,-1px -1px white;
+            margin-top:10px;
+            margin-bottom: 10px;
+        }
+        #p2{
+            line-height: 25px;
+            transform:scale(0,0);
+        }
+        #pic{
+            position: absolute;
+            top:290px;
+            left:0;
+            width:80px;
+            height:23px;
+            background:pink;
+            color:white;
+            line-height: 23px;
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
+            font:bolder 18px 宋体;
+        }
+        #pic2{
+            color:white;
+            position: absolute;
+            top:10px;
+            right: 10px;
+            width:90px;
+            height: 20px;
+            background:pink;
+            line-height: 20px;
+            text-shadow:2px 2px 5px black;
+            font:bolder 18px 宋体; 
+            text-align: center;
+        }
+        @media screen and (min-width:1250px) and (max-width:1530px){
+            .container{
+                position: relative;
+                top:10px;
+                left:30%;
+            }
+        }
+        @media screen and (min-width:800px) and (max-width:1249px){
+            .container{
+                position: relative;
+                top:10px;
+                left:20%;
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:799px){
+            .container{
+                position: relative;
+                top:10px;
+                left:10%;
+            }
+        }
+        @media screen and (max-width:599px){
+            .container{
+                position: relative;
+                top:10px;
+                left:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="xun">
+            <img src="blackpink.jpg" id="img">
+            <div id="box"></div>
+        </div>
+        <div id="pic">
+            <p>PHOTO</p>
+        </div>
+        <div id="pic2">
+            <p>BLACKPINK</p>
+        </div>
+        <div id="fun">
+            <h1 id="h1">BLACKPINK</h1>
+            <h2 id="h2">一线大势女团</h2>
+            <p id="p2">BLACKPINK是YG娱乐于2016年推出的女子KPOP组合,成员有颜值担当JISOO,ACE担当JENNIE,舞蹈担当LISA,主唱ROSE。区别于其他女团的性感路线，BLACKPINK以其特有的说唱,极强的舞台感染力,成为一线大势女团。粉丝名称BLINK,I'm a blink </p>
+        </div>
+        <canvas id="canvas" width="500" height="450"></canvas>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        var width=document.body.clientWidth;
+        console.log(width);
+    }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .file{
+        width:500px;
+        border:2px solid #7a7a7a;
+        margin-bottom: 20px;
+    }
+    .p{
+        color: red;
+        font-size: 14px;
+    }
+    .in{
+        width: 175px;
+    }
+    nobr{
+        color:red;
+    }
+    </style>
+
+</head>
+<body>
+    <h1>毕业生信息</h1>
+    <form action="huangfu.html" method="get" id="testform">
+        <fieldset class="file">
+            <legend class="p">
+              学生信息
+            </legend>
+            姓 名 <input type="text" name="name" placeholder="请输入姓名" required="required" autofocus="autofocus" class="in" /> <nobr>*</nobr><br>
+            学 号 <input type="number" name="number" min="1" max="1000000" step="1" placeholder="请输入学号" required="required" class="in" /> <nobr>*</nobr><br>
+            手 机 <input type="tel" name="tel" placeholder="请输入手机号" required="required" class="in" /> <nobr>*</nobr><br>
+            邮 箱 <input type="email" name="email" placeholder="请输入邮箱地址" required="required" class="in" /> <nobr>*</nobr><br>
+        </fieldset>
+    </form>
+        <fieldset class="file">
+            <legend class="p">
+                录取情况
+            </legend>
+            录取学校 <input type="search" name="school" class="in" form="testform" ><br>
+            入学成绩 <input type="number" min="0" max="500" step="1" name="number2" class="in" form="testform"><br>
+            入学时间 <input type="date" name="date" form="testform"><br>
+        </fieldset>
+    <input type="submit" form="testform" value="提交" name="sub"/>
+</body>
+</html>
