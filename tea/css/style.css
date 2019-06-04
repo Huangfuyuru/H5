@@ -98,3 +98,8 @@
 }
 
 
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 210px;
+}
