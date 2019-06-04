@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>麗砂——非遗文化紫砂壶传承</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/jsmodern.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" type="text/css" href="../css/style1.css">
@@ -166,8 +165,7 @@
             </div>
         </div>
         <div id="video">
-            <video src="../img/lisa.mp4" id="videoShow"></video>
-            <span class="VideoBtn"><img src="../images/bo1.png"></span>
+            <video src="../img/lisa.mp4" id="videoShow" ></video>
         </div>
 </div>
 </section>
@@ -380,7 +378,6 @@
 </body>
 
 <script src="../js/jquery-3.4.1.min.js"></script>
-<script src="../js/jsmodern.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         
@@ -413,46 +410,8 @@
     });
     $(function(){
     new WOW().init();
-        //视频
-        jsModern.video("#video");
-        //播放视频
-        $(".VideoBtn").click(function () {
-            var video = document.getElementById("videoShow");
-            video.play();
-            $('.VideoBtn').hide();
-        })
-        //监听视频的播放状态
-        var video = document.getElementById("videoShow");
-        video.oncanplay = function () {
-            $(".VideoBtn").show();
-            //$("#video").attr("poster","");
-        }
-        //视频播放事件
-        video.onplay = function () {
-            $("#videoShow").attr("poster", "");
-            $(".VideoBtn").hide();
-        };
-        video.onplaying = function () {
-            $(".VideoBtn").hide();
-        };
-
-        //视频暂停事件
-        video.onpause = function () {
-            $(".VideoBtn").show();
-        };
-        //点击视频周围暂停播放图片出现
-        video.onclick = function () {
-            if (video.paused) {
-                $(".VideoBtn").hide();
-                video.play();
-            } else {
-                $(".VideoBtn").show();
-                video.pause();
-            }
-        };
     })
 </script>
-<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery.SuperSlide2.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery.singlePageNav.min.js"></script>
