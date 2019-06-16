@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#dddddd;
+}
+
+/*登录login*/
+#login{
+    width:100%;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    line-height: 40px;
+}
+#login p{
+    display: inline;
+    color:white;
+}
+/*导航*/
+#nav-example{
+    height: 80px;
+    margin:0;
+}
+nav li{
+    padding:15px 25px;
+    font-size: 18px;
+    color:black;
+}
+.navbar-header{
+    height: 80px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+/*首页*/
+
+/*记得加媒体相应*/
+@media screen and (min-width:680px){
+    .flex{display:flex;flex-wrap:wrap;}
+    #generic{
+        height: 445px;
+        overflow: hidden;
+        width:100%;
+        position: relative;
+    }
+    .carousel-caption {
+        left: 15%;
+        padding-bottom: 200px;
+        width:550px;
+        text-align: left;
+    }
+    .zoomImg{
+        height: 445px;
+    }
+    .carousel-caption  p{
+        font-size: 15px;
+    }
+    .carousel-caption h2{
+        font-family: '宋体';
+        font-size: 45px
+    }  
+    form-group.has-feedback {
+        position: absolute;
+        top: 300px;
+        width:100%;
+    }
+    .form-control{
+        height: 50px;
+        border:3px solid;
+        box-shadow: 0 0 #523a17;
+        border-radius: 10px 10px;
+    }
+    #index .container{
+        height: 365px;
+        margin-top: 30px;
+    }
+    #index .blue{
+        background-color:#14316d;
+        height: 365px;
+        color:white;
+        text-align: center;
+    }
+    #index .car{
+        
+        width:100px;
+        height: 100px;
+        border:2px solid white;
+        border-radius: 50px 50px;
+        margin:70px auto 20px;
+        position: relative;
+       
+    }
+    #index .car img{
+        position: absolute;
+        top:30px;
+        right: 15px;
+    }
+    .car1{
+        width:180px;
+        height: 50px;;
+        border:2px solid white;
+        border-radius: 10px;
+        margin:50px auto 20px;
+    }
+    .car1 h2{
+        line-height: 50px;
+        padding:0;
+        margin:0;
+    }
+    
+    #index .blue1{
+        position: relative;
+    }
+    .blue1 .font1{
+        position: absolute;
+        top:20px;
+        right: 20px;
+        color: white;
+    }
+    #index .buttonk{
+        position: absolute;
+        bottom: -60%;
+        left: 28%;
+    }
+    
+    .buttonk .in{
+        display: inline-block;
+        margin:0 -4px;
+        padding:0;
+        height: 45px;
+        width: 50%;
+        border:none;
+        
+    }
+    #index .b1{
+        background-color: #d3d3d8;
+        border:none;
+        width:25%;
+        height: 45px;
+    }
+    #index .b2{
+        background-color:#cb5405;
+        border:none;
+        width:25%;
+        height: 45px;
+    }
+    #index .b4{
+        width: 53%;
+        border: 3px solid rgba(13, 12, 17, 0.8);
+        border-radius: 10px;
+    }
+    /*热门线路*/
+    #load .col-md-12{
+        text-align: center;
+    }
+    #load .col-md-6{
+        padding:0;
+        margin:0;
+        position: relative;
+    }
+    #load .col-md-6 img{
+        border:1px solid white;
+    }
+    .x4 .xxx{
+        position: relative;
+    }
+    #load .xx{
+        background-color:black;
+        color: white;
+        position: absolute;
+        left:0%;
+        bottom: -23%;
+        width: 99.9%;
+        z-index: 3;
+    }
+    #load .xs{
+        background-color:rgba(13, 12, 17, 0.8);
+        color: white;
+        position: absolute;
+        left:0%;
+        bottom: 0%;
+        width: 99.9%;
+    }
+    #load .img2{
+        margin-top:50px;
+    }
+    
+    #load button{
+        display: none;
+    }
+    /*签证推荐*/
+    #find .container{
+        text-align: center;
+    }
+    #find .u{
+        margin-top: 30px;
+    }
+    .u .col-md-4{
+        margin:0;
+        padding:0;
+    }
+    .u .u1{
+        border:2px solid white;
+        position: relative;
+        width: auto;
+    }
+    .u1 .u2{
+        position: absolute;
+        color:white;
+        background-color: rgba(40,44,48,0.9);
+        left:0%;
+        bottom: 0%;
+        text-align: center;
+        width:385px;
+    }
+    #find button{
+        background-color:#dddddd;
+        margin: 30px auto;
+        width: 200px;
+        border:1px solid black;
+    }
+    #find .u5{
+        margin-top:50px;
+    }
+    /*使命与愿景*/
+    #lucky{
+        background:url(../img/back.png);
+    }
+    #lucky .col-md-12{
+        text-align: center;
+    }
+    #lucky .k1{
+        background-color:rgba(27,77,123,0.8);
+        color:white;
+       
+    }
+    #lucky .k2{
+        margin:0;
+        padding:0;
+    }
+    .k1 p{
+        line-height: 30px;
+    }
+    .k3{
+        padding: 100px 138px 50px 138px;
+    }
+    .k5{
+        background-color:#1c5080;
+        color:white;
+        text-align: center;
+    }
+    .k4{
+        height: 220px;
+        position: relative;
+        margin-bottom: 30px;
+        background-repeat: no-repeat,no-repeat;
+        background-position: 159px 79px,87px 35px;
+    }
+    .k5 .kk1{
+        background-image:url(../img/icon1.png),url(../img/rorate.png);
+       
+    }
+    .k4 p{
+        position: absolute;
+        top: 159px;
+        left: 157px;
+    }
+    .k5 .kk2{
+        background-image: url(../img/icon2.png),url(../img/rorate.png);
+        
+    }
+    .k5 .kk3{
+        background-image: url(../img/icon3.png),url(../img/rorate.png);
+        
+    }
+    /*页脚*/
+    footer{
+        background-color: black;
+        color:white;
+    }
+    footer .col-md-2{
+        padding:0;
+        margin:0;
+        text-align: center;
+    }
+    footer .col-md-10{
+        padding:0;
+        margin-top:20px;
+        
+    }
+    ul,li{
+        padding:0;
+        margin:0;
+        list-style: none;
+    }
+    li{
+        font-size: 12px;
+        font-weight: bold;
+        float:left;
+        text-align: center;
+        margin-right: 13px;
+    }
+    footer .p1{
+        margin-top: 50px;
+        padding-top:50px;
+        padding-bottom: 50px;
+        border-top:1px solid white;
+        text-align: center;
+    }
+    .p2{
+        display: inline-block;
+        float: left;
+        margin-right: 30px;
+        text-align: center;
+    }
+    .p2 p{
+        margin-top:10px;
+    }
+}
+@media screen and (max-width:680px){
+    .flex{display:flex;flex-wrap:wrap;}
+    #generic{
+        height: 365px;
+        overflow: hidden;
+        width:100%;
+    }
+    .carousel-caption {
+        width:100%;
+        left:0;
+        top:0;
+    }
+    .carousel-caption p,.carousel-caption HR{
+        display: none;
+    }
+    .carousel-caption h2::after{
+        
+        content: "\A全新升级热早+1晚5星酒店";
+        white-space: pre;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    .carousel-inner{
+        height: 365px;
+        width: 100%;
+    }
+    .item{
+        height: 365px;
+    }
+    .zoomImg{
+        height: 365px;
+    }
+    #byBar{
+        background: white;
+        margin: 20px 0;
+        height: 200px;
+    }
+    .blue >h2,.blue1 img,.car{
+        display: none;
+    }
+    .blue{
+        background-color: white;
+    }
+    .font1:before{
+        content: '';
+        background: url(../img/carH.png) no-repeat;
+        display: inline-block;
+        width:100px;
+        height: 100px;
+        margin: 45px 30px;
+        padding: 0;
+        float: left;
+    }
+    .font1{
+        width: auto;
+    }
+    .font2 h2{
+        color:#1c5080;
+        margin-bottom: 20px;
+    }
+    .font1 .font2{
+        display: inline-block;
+        margin: 29px 10px;
+        float: right;
+    }
+    .blue{
+        height: 200px;
+    }
+    .car1{
+        border:1px solid #b5b5b5;
+        border-radius: 10px; 
+        margin:80px auto;
+        text-align: center
+    }
+    .car1 h2{
+        margin: 0;
+        padding: 8px 3px;
+        font-size: 25px;
+    }
+    #index .buttonk{
+        position: absolute;
+        bottom: 11%;
+        left: 28%;
+    }
+    #index .b4{
+        width: 120%;
+        border: 4px solid rgba(13, 12, 17, 0.8);
+        border-radius: 10px;
+    }
+    .buttonk .in{
+        display: inline-block;
+        margin:0 -4px;
+        padding:0;
+        height: 30px;
+        width: 50%;
+        border:none;
+        
+    }
+    
+    #index .b1{
+        background-color: #d3d3d8;
+        border:none;
+        width:25%;
+        height: 30px;
+    }
+    #index .b2{
+        background-color:#cb5405;
+        border:none;
+        width:25%;
+        height: 30px;
+    }
+    
+     /*热门线路*/
+     #load{
+         background-color: white;
+         margin-top: 20px;
+     }
+     #load #x,#load .re h3{
+         display: none;
+     }
+     #load .xxx{
+         height: 90%;
+         position: relative;
+         width:95%;
+         margin-top: 20px;
+     }
+     #load .xx{
+        background-color:rgba(13, 12, 17, 0.8);
+        color: white;
+        position: absolute;
+        width: 99.9%;
+        bottom: 0%;
+    }
+    #load button{
+        display: block;
+        margin: 30px auto;
+        width: 200px;
+    }
+    /*签证推荐*/
+    #find .u3 h3,.u4{
+        display: none;
+    }
+    #find{
+        background-color: white;
+        margin-top: 20px;
+    }
+    .u .u1{
+        border:2px solid white;
+        position: relative;
+       
+    }
+    .u1 .u2{
+        position: absolute;
+        color:white;
+        background-color: rgba(40,44,48,0.9);
+        left:0%;
+        bottom: 0%;
+        text-align: center;
+        width:99.9%;
+    }
+    #find .col-xs-6{
+        margin:0;
+        padding:0;
+    }
+    #find button{
+        background-color:white;
+        margin: 30px 33%;
+        width: 200px;
+        border:1px solid black;
+    }
+    #find .u5{
+        display: none;
+    }
+    /*使命愿景*/
+    #lucky{
+        margin-top: 20px; 
+        padding-bottom: 50px;   
+        background:url(../img/back.png);
+        background-color: rgba(255, 255, 255, 0.788);
+    }
+    .col-md-12 .col-xs-8 p{
+        margin:33px 0px 0px 10px
+    }
+    .col-md-5.col-xs-12.k2{
+        margin-top:30px;
+        margin-bottom: -30px;
+    }
+    .k21{
+       
+        height: 80%;;
+    }
+    .k21 img{
+        display: block;
+        height: 100%;
+        width:100%;;
+    }
+    .k3 h3,.k4{
+        display: none;
+    }
+    .k3{
+        text-align: center;
+        margin-bottom:30px;
+    }
+    .k3 p{
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .k3 p:before{
+        content:'--服务理念--\A';
+        text-align: center;
+        white-space: pre;
+        font-size: 20px;
+    }
+    .k7{
+        margin-left:2%;
+        margin-right: 2%;
+    }
+    .ky{
+        position: relative;
+        height: 160px;
+        background-repeat: no-repeat;
+        background-position: 20% 50%;
+        background-color: white;
+        border-bottom: 1px solid #7a7777;
+    }
+    .ky p{
+        position: absolute;
+        top:38%;
+        left:40%;
+    } 
+    .ky1{
+        background-image:url(../img/icon11.png);
+    }
+    .ky2{
+        background-image:url(../img/icon22.png);
+    }
+    .ky3{
+        background-image:url(../img/icon33.png);
+    }
+    footer .p3{
+        display: none;
+    }
+    footer{
+        background-color: black;
+        color:white;
+    }
+    .p4 p:after{
+        content:'\A技术支持  杭州联橙科技';
+        
+    }
+    .p4{
+        padding: 50px 41px 50px 48px;
+    }
+    
+}
