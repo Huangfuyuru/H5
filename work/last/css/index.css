@@ -320,6 +320,10 @@ nav li{
     }
 }
 @media screen and (max-width:680px){
+    /*登录*/
+    #login{
+        display: none;
+    }
     .flex{display:flex;flex-wrap:wrap;}
     #generic{
         height: 365px;
