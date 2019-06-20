@@ -38,10 +38,7 @@ nav li{
 
 /*记得加媒体相应*/
 @media screen and (min-width:680px){
-    img#imgl {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
+    
     .flex{display:flex;flex-wrap:wrap;}
     #generic{
         height: 445px;
@@ -230,7 +227,7 @@ nav li{
         border:1px solid black;
     }
     #find .u5{
-        margin-top:50px;
+        margin: 50px 0px 0px 50px;
     }
     /*使命与愿景*/
     #lucky{
