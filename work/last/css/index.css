@@ -227,7 +227,10 @@ nav li{
         border:1px solid black;
     }
     #find .u5{
-        margin: 50px 0px 0px 50px;
+        margin: 50px 0px 0px 0px;
+    }
+    .u5 img{
+        margin:0 auto;
     }
     /*使命与愿景*/
     #lucky{
